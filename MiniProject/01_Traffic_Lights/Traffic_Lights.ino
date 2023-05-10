@@ -6,7 +6,6 @@ void setup() {
 }
 
 void loop() {
-  tone(13, 1000, 1000);
   digitalWrite(13, HIGH);   
   delay(100); 
   digitalWrite(13, LOW);  
