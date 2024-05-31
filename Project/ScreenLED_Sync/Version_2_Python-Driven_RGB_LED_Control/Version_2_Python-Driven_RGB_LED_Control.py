@@ -14,10 +14,10 @@ def send_command(command):
     print("Arduino:", response)
 
 while True:
-    user_input = input("Wpisz 'r', 'g', 'b' aby zmienić kolor LED lub 'c' aby wyłączyć: ").strip().lower()
+    user_input = input("Write 'r', 'g', 'b' to change color or 'c' to turn it off: ").strip().lower()
     if user_input in ['r', 'g', 'b', 'c']:
         send_command(user_input)
     else:
-        print("Nieznana komenda. Użyj 'r', 'g', 'b' lub 'c'.")
+        print("Unknown Command. Please use 'r', 'g', 'b' or 'c'.")
 
 ser.close()
